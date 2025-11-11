@@ -5,7 +5,10 @@ import { GrGithub } from "react-icons/gr";
 
 
 const Navbar = () => {
-    return (
+    const gitHub = () => {
+        window.location.href = "https://github.com/GMRedoan"
+    }
+     return (
         <nav className="navbar bg-base-100 border-b-1 border-gray-50">
             <div className="navbar-start ml-7">
                 <div className="dropdown">
@@ -20,8 +23,9 @@ const Navbar = () => {
                         <li><a>Installation</a></li>
                     </ul>
                 </div>
+                <Link to='/' className='flex items-center'>
                 <img className='w-[40px] mr-2' src={logo} alt="" />
-                <Link to='/'><p className="text-xl font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text">APPs 4 U</p>
+                <p className="text-xl font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text">APPs 4 U</p>
                 </Link>
             </div>
             <nav className="navbar-center hidden lg:flex">
@@ -32,7 +36,7 @@ const Navbar = () => {
                 </ul>
             </nav>
             <div className="navbar-end mr-7">
-                <a className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><GrGithub />Contribute</a>
+                <a onClick={gitHub} className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><GrGithub />Contribute</a>
             </div>
         </nav>
     );

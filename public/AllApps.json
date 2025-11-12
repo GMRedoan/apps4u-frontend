@@ -1,0 +1,434 @@
+[
+  {
+    "image": "https://i.ibb.co.com/Wv3ZC9vC/3-CYca-Le-YCz-QGI5w-Q2l-XKFF3-Wolj-L2ml-Tm0w-Ph-Jw-L-as-Ts-Dea-Vofi-Qm-Bs-WPT-m-XEew.png",
+    "title": "Task Master",
+    "companyName": "ProdTech",
+    "id": 1,
+    "description": "Organize your tasks and projects efficiently.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/PvY7zNsQ/still-875cf45c3eb3ca15ac5b02c97489f5e9.gif",
+    "title": "FitLife",
+    "companyName": "Health Apps",
+    "id": 2,
+    "description": "Track your workouts and stay healthy.",
+    "size": 60,
+    "reviews": 850,
+    "ratingAvg": 4.2,
+    "downloads": "7.5M",
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 390 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/rGM9Q5p5/X8-Tkk-Aeih-S-BSa-Zt-GQe16s-GD3f-X3j8-FAFl-D7s-DSz-Dcrmbbyi-LVRO26we-Nj-JSJKZE8-Her-w240-h480-rw.webp",
+    "title": "Photo Snap",
+    "companyName": "SnapCorp",
+    "id": 3,
+    "description": "Capture and edit stunning photos easily.",
+    "size": 80,
+    "reviews": 2300,
+    "ratingAvg": 4.7,
+    "downloads": "4M",
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1400 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tpGhF1FT/93-Mj-Jpxj-Hq6y-6v-J75-JDz-Pn61-YWUA2x-T7-Xn-D5r5-B1-F368-Qo-Out3f-ZDLih2-HMKcg1h8-B-w240-h480-rw.webp",
+    "title": "Mind Calm",
+    "companyName": "ZenLife",
+    "id": 4,
+    "description": "Meditation and mindfulness for daily peace.",
+    "size": 50,
+    "reviews": 1500,
+    "ratingAvg": 4.6,
+    "downloads": "3.4M",
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 790 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/mC5rvKVK/qzd5vlyd-FBIq-Yus-Ka-Qbr-HSBs-XPM4yi5k-Huusp-RPu-f-Tyw7b-Fwvthks-Mi-SEGY1c-Uc-Juw.png",
+    "title": "Travel Buddy",
+    "companyName": "WanderTech",
+    "id": 5,
+    "description": "Plan trips and explore new destinations.",
+    "size": 70,
+    "reviews": 900,
+    "ratingAvg": 4.3,
+    "downloads": "2.5M",
+    "ratings": [
+      { "name": "1 star", "count": 15 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 440 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/sTyfpv9/1200x630wa.png",
+    "title": "Learn Lang",
+    "companyName": "EduTech",
+    "id": 6,
+    "description": "Learn new languages quickly and easily.",
+    "size": 55,
+    "reviews": 2000,
+    "ratingAvg": 4.8,
+    "downloads": "4.6M",
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 10 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1270 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/C5ZfXxk6/95c-H3t33l-UCuvu-Rn-YLAb4e55gjhrp01fs0-HCza-GKcm-Kb-W74o-EVDOD8m-N7-T35k-W5-HDi-M.png",
+    "title": "Money Mate",
+    "companyName": "FinancePro",
+    "id": 7,
+    "description": "Track expenses and manage your budget.",
+    "size": 65,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": "7M",
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Mkh9tGRr/n95-QPm-Ct-Lx6uz-K7-Ah-Qgr7r-T81yx-WQ3z-WZNOarso4js-hh-I0-Z2-ZAVUVTh7-MG5-XIw-NLWI.png",
+    "title": "Recipe Box",
+    "companyName": "Foodies",
+    "id": 8,
+    "description": "Discover and save delicious recipes.",
+    "size": 40,
+    "reviews": 1300,
+    "ratingAvg": 4.5,
+    "downloads": "3.4M",
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 650 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Z9zZ36V/u-Cne-OAP0-XSgj-L7-Dwp-D1-OI2-Vv-AOXva-Ccm24i-WKEKQ3-BTGJiu-VFy-OH86-OKkgw-M5-IVaw.png",
+    "title": "TuneFlow",
+    "companyName": "MelodyTech",
+    "id": 9,
+    "description": "Stream and discover your favorite music effortlessly.",
+    "size": 75,
+    "reviews": 3400,
+    "ratingAvg": 4.6,
+    "downloads": "12M",
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 2160 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/2116jSRt/10770b288a55c72e50ce3b7fd295445519769461-512x512.png",
+    "title": "Readify",
+    "companyName": "BookVerse",
+    "id": 10,
+    "description": "Read eBooks and listen to audiobooks anywhere.",
+    "size": 90,
+    "reviews": 4200,
+    "ratingAvg": 4.7,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 2910 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tpph5wcJ/ddbe4b7ecfd5b5ed3da5504358d99e89-icon.png",
+    "title": "WeatherNow",
+    "companyName": "SkyCast",
+    "id": 11,
+    "description": "Get accurate weather forecasts instantly.",
+    "size": 40,
+    "reviews": 1800,
+    "ratingAvg": 4.3,
+    "downloads": "8M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 810 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ccbRzYQn/q-Ea-LKw-Sci-VUEGnhyao-UWf-NXbm-Zl-FW7-D25-D99b-XOy-HS2b-FF426vlf22r29d6-Yfe-Y4d-JQ-w240-h480-rw.webp",
+    "title": "Food Rush",
+    "companyName": "QuickEats",
+    "id": 12,
+    "description": "Order delicious food from nearby restaurants.",
+    "size": 85,
+    "reviews": 3900,
+    "ratingAvg": 4.5,
+    "downloads": "15M",
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2050 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/9HGmsZHg/Qt-Ilb2-Nr4-J4-u4-VJfg-G9-Oqx-Mf-O1-YD3-UKl-Aw-Hn-Sk-Z215-Hn-IL8-C2-POs-Jbe-Nb-IPJq-Lg-JQ.png",
+    "title": "StockPro",
+    "companyName": "FinEdge",
+    "id": 13,
+    "description": "Track your stocks and manage investments easily.",
+    "size": 60,
+    "reviews": 2700,
+    "ratingAvg": 4.4,
+    "downloads": "6.5M",
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1430 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/gZ3njQ20/maply-icon.png",
+    "title": "Maply",
+    "companyName": "GeoTech",
+    "id": 14,
+    "description": "Navigate cities and explore places offline.",
+    "size": 100,
+    "reviews": 5100,
+    "ratingAvg": 4.6,
+    "downloads": "20M",
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 3180 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/q3GjMKmW/Out-Ajz8l-MN0-Ll-DF9-FRm-BAm-IHOh2-Iw-tv-FUxm0-Fh-Vg-Mu6l0r-WMo-Czd-Vw-V-yanb-Tfxqw-w240-h480-rw.webp",
+    "title": "ShopEasy",
+    "companyName": "RetailHub",
+    "id": 15,
+    "description": "Shop your favorite brands at discounted prices.",
+    "size": 90,
+    "reviews": 6800,
+    "ratingAvg": 4.7,
+    "downloads": "25M",
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1700 },
+      { "name": "5 star", "count": 4100 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Y4j2GdMQ/1200x630wa.jpg",
+    "title": "StepSync",
+    "companyName": "FitCorp",
+    "id": 16,
+    "description": "Track your steps, calories, and daily progress.",
+    "size": 50,
+    "reviews": 2100,
+    "ratingAvg": 4.2,
+    "downloads": "9M",
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1010 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/zZZyChR/podcast-app.png",
+    "title": "PodWave",
+    "companyName": "Streamly",
+    "id": 17,
+    "description": "Listen to trending podcasts on the go.",
+    "size": 55,
+    "reviews": 1500,
+    "ratingAvg": 4.3,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 680 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/dBR7C92/game-center.png",
+    "title": "GameZone",
+    "companyName": "PlayLabs",
+    "id": 18,
+    "description": "Discover and play thousands of online games.",
+    "size": 120,
+    "reviews": 7200,
+    "ratingAvg": 4.5,
+    "downloads": "30M",
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 3500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/SrnQs6G/camera-app.png",
+    "title": "CamBoost",
+    "companyName": "PixelWorks",
+    "id": 19,
+    "description": "Enhance and filter photos with AI precision.",
+    "size": 65,
+    "reviews": 2600,
+    "ratingAvg": 4.6,
+    "downloads": "11M",
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1230 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/h7cWZxP/learning-app.png",
+    "title": "Skillify",
+    "companyName": "LearnSmart",
+    "id": 20,
+    "description": "Master new skills with interactive lessons.",
+    "size": 70,
+    "reviews": 3800,
+    "ratingAvg": 4.8,
+    "downloads": "8.7M",
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 2710 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/Lhh0X7T/news-app.png",
+    "title": "DailyBuzz",
+    "companyName": "InfoStream",
+    "id": 21,
+    "description": "Stay updated with breaking news and headlines.",
+    "size": 55,
+    "reviews": 3100,
+    "ratingAvg": 4.4,
+    "downloads": "14M",
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1550 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/0jFGzS4/notes-app.png",
+    "title": "NoteSync",
+    "companyName": "CloudNote",
+    "id": 22,
+    "description": "Sync your notes securely across all devices.",
+    "size": 45,
+    "reviews": 2200,
+    "ratingAvg": 4.5,
+    "downloads": "6M",
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1230 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/N39s2Pd/meditation-app.png",
+    "title": "BreatheOn",
+    "companyName": "CalmTech",
+    "id": 23,
+    "description": "Find calm and focus with guided breathing.",
+    "size": 50,
+    "reviews": 1700,
+    "ratingAvg": 4.6,
+    "downloads": "3.8M",
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 950 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co/JjSfwR9/calendar-app.png",
+    "title": "PlanUp",
+    "companyName": "SchedulePro",
+    "id": 24,
+    "description": "Plan meetings and manage schedules easily.",
+    "size": 48,
+    "reviews": 1900,
+    "ratingAvg": 4.4,
+    "downloads": "5M",
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 950 }
+    ]
+  }
+]

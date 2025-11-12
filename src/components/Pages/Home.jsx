@@ -11,14 +11,14 @@ const Home = () => {
             <div className='text-center py-8 space-y-3'>
                 <h2 className='text-4xl font-bold'>Trending Apps </h2>
                 <p className='text-[#627382]'>Explore All Trending Apps on the Market developed by us</p>
-                <div className="grid grid-cols-4 gap-4 px-20 mt-10">
+                <div className="grid grid-cols-1 ml-7 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 lg:px-20 mt-10">
                     {homeApps.map(app => (
                     <AppsCard key={app.id} app={app} />
                     ))}
                 </div>
             </div>
-                <div className="navbar-end mr-7 pb-15">
-                   <Link to='/apps' className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">Show All</Link>
+                <div className="flex justify-center mr-7 pb-15">
+                   <Link to='/apps' className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white px-20">Show All Apps</Link>
                </div>
          </div>
     );

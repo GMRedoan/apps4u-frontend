@@ -4,13 +4,21 @@ import appStore from '../../assets/app-store.svg'
 import hero from '../../assets/hero.png'
 
 const Banner = () => {
+  const handleAppStore = () => {
+    const appUrl = "https://apps.apple.com/app/idXXXXXXXXX";
+    window.open(appUrl, "_blank")
+  }
+  const handlePlayStore  = () => {
+    const playUrl = "https://play.google.com/store/apps/details?id=com.yourapp.package";
+    window.open(playUrl, "_blank")
+  }
     return (
         <div className='flex flex-col justify-center pt-10 space-y-5'>
             <h2 className='text-5xl font-semibold text-center'>We Build <br /> <span className=" bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text">Productive</span> Apps</h2>
             <p className='text-[#627382] text-[18px] text-center'>At APPs 4 U, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             <div className='flex justify-center gap-2'>
-            <button className='btn'><img className='w-6' src={playStore} alt="" /> Google Play</button>
-            <button className='btn'><img className='w-6' src={appStore} alt="" /> App Store</button>
+            <button onClick={handlePlayStore} className='btn'><img className='w-6' src={playStore} alt="" /> Google Play</button>
+            <button onClick={handleAppStore} className='btn'><img className='w-6' src={appStore} alt="" /> App Store</button>
             </div>
            <div className='flex justify-center'>
              <img className='w-[60%]' src={hero} alt="" />

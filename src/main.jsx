@@ -15,27 +15,29 @@ import AppDetails from './components/Pages/AppDetails.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    Component: Root,
+    element: <Root></Root>,
     children: [
       {
         index: true,
-        Component: Home,
+        element: <Home></Home>,
         loader: () => fetch('/public/homeApps.json'),
         hydrateFallbackElement: <Loading></Loading>
       },
       {
         path: '/apps',
-        Component: Apps,
+        element: <Apps></Apps>,
         loader: () => fetch('/public/AllApps.json'),
         hydrateFallbackElement: <Loading></Loading>,
       },
       {
         path: '/appDetails/:id',
-        element: <AppDetails></AppDetails>
+        element: <AppDetails></AppDetails>,
+        loader:()=> fetch('/public/AllApps.json'),
+        hydrateFallbackElement: <Loading></Loading>,
       },
       {
         path: '/installation',
-        Component: Installation
+        element: <Installation></Installation>
       },
     ]
   },

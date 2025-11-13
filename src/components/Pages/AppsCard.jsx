@@ -1,10 +1,12 @@
- import React from 'react';
+import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import { PiDownloadSimpleBold } from 'react-icons/pi';
- 
- const AppsCard = ({app, onSelect}) => {
-    return (
-       <div onClick={() => onSelect(app)} className="card bg-base-100 w-75 shadow-sm py-5  hover:-translate-y-2 hover:scale-103
+import { Link } from 'react-router';
+  
+ const AppsCard = ({app}) => {
+     return (
+      <Link to={`/appDetails/${app.id}`}>
+             <div className="card bg-base-100 w-75 shadow-sm py-5  hover:-translate-y-2 hover:scale-103
         cursor-pointer hover:shadow-xl
       transform transition-all duration-300">
   <figure >
@@ -20,7 +22,8 @@ import { PiDownloadSimpleBold } from 'react-icons/pi';
     <p className='btn border-0 text-[#00D390] bg-[#F1F5E8]'><PiDownloadSimpleBold /> {app.downloads}</p>
     <p className='btn border-0 bg-[#FFF0E1] text-[#FF8811]'><FaStar/> {app.ratingAvg}</p>
    </div>
- </div>
+  </div>
+</Link>
      );
  };
  

@@ -1,74 +1,91 @@
-import React from "react";
+import React, { useState } from "react";
+import { useParams, useLoaderData, Link } from "react-router";
+import { FaStar } from "react-icons/fa";
+import { PiDownloadSimpleBold } from "react-icons/pi";
+import { BiSolidMessageRoundedDots } from "react-icons/bi";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import { toast, ToastContainer } from "react-toastify";
+ 
+const AppDetails = () => {
+  
+    const [installed, setInstalled] = useState(false)
+    const handleInstall = () => {
+        setInstalled(true)
+        notify()
+     }
+    const notify = () => toast.success(`(${app.title}) → Installed Successfully`);
 
-const AppDetails = ({ app }) => {
-  const totalRatings = app.ratings.reduce((sum, r) => sum + r.count, 0);
+    const { id } = useParams();
+    const apps = useLoaderData();
+    const app = apps.find((a) => a.id === parseInt(id));
 
-  return (
-    <div className="max-w-4xl mx-auto p-8 bg-gray-50 rounded-lg">
-      {/* Top Section */}
-      <div className="flex space-x-8 items-center mb-8">
-        <img
-          src={app.image}
-          alt={`${app.title} logo`}
-          className="w-40 h-40 object-contain bg-white rounded-md"
-        />
-        <div className="flex-1">
-          <h1 className="text-2xl font-bold">{app.title}</h1>
-          <p className="text-gray-600 mb-2">
-            Developed by{" "}
-            <span className="text-purple-600 font-semibold">{app.companyName}</span>
-          </p>
-          <div className="flex space-x-12 text-center mb-4">
-            <div>
-              <p className="text-green-600 text-2xl font-bold">{app.downloads}</p>
-              <p className="text-gray-500 text-sm">Downloads</p>
-            </div>
-            <div>
-              <p className="text-orange-500 text-2xl font-bold">{app.ratingAvg}</p>
-              <p className="text-gray-500 text-sm">Average Ratings</p>
-            </div>
-            <div>
-              <p className="text-purple-600 text-2xl font-bold">{app.reviews.toLocaleString()}</p>
-              <p className="text-gray-500 text-sm">Total Reviews</p>
-            </div>
-          </div>
-          <button className="bg-green-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-green-600 transition">
-            Install Now ({app.size} MB)
-          </button>
-        </div>
-      </div>
+    return (
+        <div className="max-w-4xl mx-auto mt-10 p-6 border-b border-gray-300 pb-6">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-gray-300 pb-6">
+                <img
+                    src={app.image}
+                    alt={app.title}
+                    className="w-50 h-50 object-contain rounded-lg"
+                />
 
-      <hr className="border-gray-300 mb-8" />
+                <div className="flex-1 text-center md:text-left space-y-2">
+                    <div className="border-b border-gray-300 pb-4">
+                        <h1 className="text-2xl font-bold text-gray-900">
+                            {app.title}
+                        </h1>
+                        <p className="text-gray-600">
+                            Developed by: <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text font-semibold">{app.companyName} </span><span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-transparent bg-clip-text font-semibold">.io</span></p>
 
-      {/* Ratings Bar Chart */}
-      <div>
-        <h2 className="font-semibold mb-4">Ratings</h2>
-        <div>
-          {app.ratings
-            .slice()
-            .reverse()
-            .map(({ name, count }) => {
-              const widthPercent = (count / totalRatings) * 100;
-              return (
-                <div key={name} className="flex items-center mb-2 space-x-3">
-                  <span className="w-16 text-sm">{name}</span>
-                  <div className="bg-orange-400 h-5 rounded" style={{ width: `${widthPercent}%`, minWidth: "20px" }}></div>
-                  <span className="text-sm text-gray-700 ml-2">{count.toLocaleString()}</span>
+                    </div>
+                    <div className="flex flex-wrap justify-center md:justify-start items-center gap-8 mt-4">
+                        <div className="text-center">
+                            <PiDownloadSimpleBold className="text-3xl text-green-600 mx-auto" />
+                            <p className="text-sm text-gray-600">Downloads</p>
+                            <h2 className="text-xl font-bold">{app.downloads}</h2>
+                        </div>
+
+                        <div className="text-center">
+                            <FaStar className="text-3xl text-yellow-500 mx-auto" />
+                            <p className="text-sm text-gray-600">Average Rating</p>
+                            <h2 className="text-xl font-bold">{app.ratingAvg}</h2>
+                        </div>
+
+                        <div className="text-center">
+                            <BiSolidMessageRoundedDots className="text-3xl text-purple-500 mx-auto" />
+                            <p className="text-sm text-gray-600">Total Reviews</p>
+                            <h2 className="text-xl font-bold">{app.reviews.toLocaleString()}</h2>
+                        </div>
+                    </div>
+
+                    <button onClick={()=>handleInstall(app)}
+                        disabled={installed}
+                        className={`btn bg-green-500 hover:bg-green-600 border-none text-white font-semibold mt-4 ${installed ? "opacity-70" : "" }`}>
+                            {installed ? 'Installed' : `Install Now (${app.size} MB)`}
+                    </button>
+
                 </div>
-              );
-            })}
+            </div>
+
+            <div className="mt-10">
+                <h3 className="text-lg font-bold text-gray-800 mb-4">Ratings</h3>
+
+                <ResponsiveContainer width="100%" height={240}>
+                    <BarChart data={app.ratings} layout="vertical" margin={{ left: 40 }}>
+                        <XAxis type="number" />
+                        <YAxis dataKey="name" type="category" />
+                        <Tooltip />
+                        <Bar dataKey="count" fill="#f78d1e" barSize={25} radius={[4, 4, 4, 4]} />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
+
+            <div className="py-16">
+                <h2 className="text-lg font-bold text-gray-800 mb-4">Description</h2>
+                <p className="text-gray-500">{app.description}</p>
+            </div>
+            <ToastContainer position="top-center"/>
         </div>
-      </div>
-
-      <hr className="border-gray-300 my-8" />
-
-      {/* Description */}
-      <div>
-        <h2 className="font-semibold mb-3">Description</h2>
-        <p className="text-gray-700 leading-relaxed whitespace-pre-line">{app.description}</p>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default AppDetails;

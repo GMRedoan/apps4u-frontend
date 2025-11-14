@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, useLoaderData, Link } from "react-router";
 import { FaStar } from "react-icons/fa";
 import { PiDownloadSimpleBold } from "react-icons/pi";
@@ -7,17 +7,33 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recha
 import { toast, ToastContainer } from "react-toastify";
  
 const AppDetails = () => {
-  
+
     const [installed, setInstalled] = useState(false)
-    const handleInstall = () => {
+    const notify = () => toast.success(`(${app.title}) → Installed Successfully`)
+
+    const handleInstallBtn = (id) => {
         setInstalled(true)
         notify()
-     }
-    const notify = () => toast.success(`(${app.title}) → Installed Successfully`);
+ 
+        const installed = JSON.parse(localStorage.getItem("installed")) || [];
+        if (!installed.includes(id)) {
+            installed.push(id)
+            localStorage.setItem("installed", JSON.stringify(installed));
+        }
+
+    }
 
     const { id } = useParams();
-    const apps = useLoaderData();
-    const app = apps.find((a) => a.id === parseInt(id));
+    const apps = useLoaderData()
+    const app = apps.find((a) => a.id === parseInt(id))
+
+    useEffect(() => {
+        const installed = JSON.parse(localStorage.getItem("installed")) || [];
+        if (installed.includes(app.id)) {
+            setInstalled(true)
+        }
+    }, [app.id])
+
 
     return (
         <div className="max-w-4xl mx-auto mt-10 p-6 border-b border-gray-300 pb-6">
@@ -57,10 +73,10 @@ const AppDetails = () => {
                         </div>
                     </div>
 
-                    <button onClick={()=>handleInstall(app)}
+                    <button onClick={() => handleInstallBtn(app.id)}
                         disabled={installed}
-                        className={`btn bg-green-500 hover:bg-green-600 border-none text-white font-semibold mt-4 ${installed ? "opacity-70" : "" }`}>
-                            {installed ? 'Installed' : `Install Now (${app.size} MB)`}
+                        className={`btn bg-green-500 hover:bg-green-600 border-none text-white font-semibold mt-4 ${installed ? "opacity-70" : ""}`}>
+                        {installed ? 'Installed' : `Install Now (${app.size} MB)`}
                     </button>
 
                 </div>
@@ -83,7 +99,7 @@ const AppDetails = () => {
                 <h2 className="text-lg font-bold text-gray-800 mb-4">Description</h2>
                 <p className="text-gray-500">{app.description}</p>
             </div>
-            <ToastContainer position="top-center"/>
+            <ToastContainer/>
         </div>
     );
 };

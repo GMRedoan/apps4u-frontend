@@ -19,10 +19,19 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex="-1"
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Home</a></li>
-                        <li><a>Apps</a></li>
-                        <li><a>Installation</a></li>
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow space-y-2">
+                        <div className='flex items-center gap-1'>
+                            <FaHome></FaHome>
+                            <NavLink to='/'><li>Home</li></NavLink>
+                        </div>
+                        <div className='flex items-center gap-1'>
+                            <FaAppStoreIos />
+                            <NavLink to='/apps'><li>Apps</li></NavLink>
+                        </div>
+                        <div className='flex items-center gap-1'>
+                            <MdInstallMobile />
+                            <NavLink to='/installation'><li>Installation</li></NavLink>
+                        </div>
                     </ul>
                 </div>
                 <Link to='/' className='flex items-center'>
@@ -37,13 +46,13 @@ const Navbar = () => {
                     </div>
                     <div className='flex items-center gap-1'>
                         <FaAppStoreIos />
-                    <NavLink to='/apps'><li>Apps</li></NavLink>
-                     </div>
-                     <div className='flex items-center gap-1'>
+                        <NavLink to='/apps'><li>Apps</li></NavLink>
+                    </div>
+                    <div className='flex items-center gap-1'>
                         <MdInstallMobile />
-                    <NavLink to='/installation'><li>Installation</li></NavLink>
+                        <NavLink to='/installation'><li>Installation</li></NavLink>
 
-                     </div>
+                    </div>
                 </ul>
             </nav>
             <div className="navbar-end mr-7">

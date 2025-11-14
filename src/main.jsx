@@ -32,12 +32,14 @@ const router = createBrowserRouter([
       {
         path: '/appDetails/:id',
         element: <AppDetails></AppDetails>,
-        loader:()=> fetch('/public/AllApps.json'),
+        loader: () => fetch('/public/AllApps.json'),
         hydrateFallbackElement: <Loading></Loading>,
       },
       {
         path: '/installation',
-        element: <Installation></Installation>
+        element: <Installation></Installation>,
+        loader: () => fetch('/public/AllApps.json'),
+        hydrateFallbackElement: <Loading></Loading>,
       },
     ]
   },

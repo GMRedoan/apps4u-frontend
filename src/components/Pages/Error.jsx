@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer';
 const Error = () => {
     return (
         <div>
+            <title>Error - 404</title>
             <Navbar></Navbar>
             <div className="flex flex-col items-center justify-center min-h-screen space-y-10">
                 <div className='flex justify-center'>

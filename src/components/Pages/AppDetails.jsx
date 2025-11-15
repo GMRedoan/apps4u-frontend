@@ -23,7 +23,7 @@ const AppDetails = () => {
 
     }
 
-    const { id } = useParams();
+    const { id } = useParams()
     const apps = useLoaderData()
     const app = apps.find((a) => a.id === parseInt(id))
 
@@ -37,6 +37,7 @@ const AppDetails = () => {
 
     return (
         <div className="max-w-4xl mx-auto mt-10 p-6 border-b border-gray-300 pb-6">
+                    <title>{app.title}</title>
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-gray-300 pb-6">
                 <img
                     src={app.image}
@@ -78,7 +79,6 @@ const AppDetails = () => {
                         className={`btn bg-green-500 hover:bg-green-600 border-none text-white font-semibold mt-4 ${installed ? "opacity-70" : ""}`}>
                         {installed ? 'Installed' : `Install Now (${app.size} MB)`}
                     </button>
-
                 </div>
             </div>
 

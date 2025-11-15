@@ -9,8 +9,8 @@ const Apps = () => {
     const handleReload = () => {
         window.location.reload()
     }
-    const allApps = useLoaderData()
-
+    const allApps = useLoaderData() 
+ 
     const [loading, setLoading] = useState(false)
     const [search, setSearch] = useState('')
 

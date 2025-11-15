@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import { getInstall } from '../../utilites/Installation';
 import InstallList from './InstallList';
-import { IoMdArrowDropdown } from 'react-icons/io';
 import { toast, ToastContainer } from 'react-toastify';
 
 const Installation = () => {
@@ -11,7 +10,7 @@ const Installation = () => {
     const [sort, setSort] = useState("")
     const [appList, setAppList] = useState([])
 
-    const data = useLoaderData()
+    const data = useLoaderData() || []
 
     const handleSort = (type) => {
         setSort(type)

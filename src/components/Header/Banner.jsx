@@ -5,11 +5,11 @@ import hero from '../../assets/hero.png'
 
 const Banner = () => {
   const handleAppStore = () => {
-    const appUrl = "https://apps.apple.com/app/idXXXXXXXXX";
+    const appUrl = "https://www.apple.com/app-store/";
     window.open(appUrl, "_blank")
   }
   const handlePlayStore  = () => {
-    const playUrl = "https://play.google.com/store/apps/details?id=com.yourapp.package";
+    const playUrl = "https://play.google.com/store/games?hl=en";
     window.open(playUrl, "_blank")
   }
     return (

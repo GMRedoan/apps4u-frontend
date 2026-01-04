@@ -1,16 +1,17 @@
-# React + Vite
+ Project Name: Apps 4 U
+Live Link : https://apps4u20025.netlify.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Key Features: 
+1. Apps 4 U provide lots of useful apps for users
+2. User can log in or registration. There has a authentication system.
+3. A Logged in user can download apps from this website  or cancel his download.
+4. In all apps section an user can search their desired app and in apps details they can see the hole details about this specific apps by graph charts
+5. A private routet is implement in this website.
+6. Besides, the design is fully responsive and userfriendly
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Package i used:
+1. React.js
+2. Tailwindcss
+3. Daisyui
+4. Reacticons
+   

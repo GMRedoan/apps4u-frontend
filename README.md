@@ -1,6 +1,6 @@
 Project Name: Apps 4 U
 
-Live Link : https://apps4u20025.netlify.app
+Live Link : https://apps-4-u-2026.netlify.app
 
 Key Features: 
 1. Apps 4 U provide lots of useful apps for users
